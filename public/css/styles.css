@@ -1,6 +1,73 @@
-/******* Change Box Model ***************/
+/* Box Model Reset */
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+/* Reset Margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+figure,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography and Base Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #222;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+  color: #003366;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+  color: #005ca8;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+/* Lists */
+ul,
+ol {
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  display: block;
 }
